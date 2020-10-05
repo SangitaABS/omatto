@@ -1,0 +1,61 @@
+
+/* ---===Banner Section Start here ===--- */
+.banner{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.bannerSubContent{
+    width: 65%;
+}
+.bannertitle{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.getInfoBtn{
+    margin-right: 30px;
+}
+/* ---===Banner Section Terminated here ===--- */
+
+/* ---===Collection Section start here ===--- */
+.collectionContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+}
+.collectionSubcontent{
+    // width: 33%;
+    display: flex;
+    align-items: center;
+    padding: 40px 30px;
+}
+.productImg:hover{
+    transform: scale(1.5);
+}
+.sectionContent{
+    margin-left: 30px;
+}
+/* ---===Collection Section Terminated here ===--- */
+.featureSubcontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+.itemContent{
+    text-align: center;
+    transition: all 2s;
+}
+.itemContent:hover{
+    // text-align: center;
+    color: #45bb0c;
+    box-shadow: 4px 10px 51px #c7c7cd;
+    transform: scale(1.1);
+}
+
+/* header --- 0d0e10----1b1f24
+
+shadow-f9f9fa
+font-color adaeb5*/

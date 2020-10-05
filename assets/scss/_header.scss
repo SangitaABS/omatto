@@ -1,0 +1,84 @@
+// ---===Header Section Start here ===---
+
+.header{
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0d0e10;
+}
+.logo{
+    width: 20%;
+}
+.nav{
+    width: 75%;
+}
+// .nav:hover,
+// .nav.active{
+//     width: 300px;
+// }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.navLink:hover{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #45bb0c;
+}
+.toggle{
+    display: none;
+}
+@media (max-width: 767px)
+{
+    .header{
+        position: relative;
+        width: 100%;
+    }
+    .nav{
+        position: absolute;
+        right: -150px;
+        width: 200px;
+        transition: 0.5;
+    }
+    .nav.active{
+        top: 50px;
+        right: 0;
+        width: 200px;
+        height: 150px;
+    }
+    .navbar{
+        display:block;
+        text-align:center;
+    }
+    .navItem{
+        margin-bottom: 10px;
+    }
+    .toggle{
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        width: 40px;
+        height:40px;
+        background: #45bb0c;
+        cursor: pointer;
+    }
+    // .toggle:hover{background: pink;}
+    .toggle.active{
+        background: #ea1d63;
+    }
+    .toggle:before{
+        content: '\f0c9';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 24px;
+        color: #000;
+    }
+    .toggle.active:before{
+        content: '\f00d';
+    }
+}
+// ---===Header Section Terminated here ===---

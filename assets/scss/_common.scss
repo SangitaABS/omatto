@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato';
+}
+/* ---==== Common classes ====--- */
+h1, h2, h3, h4, p, a{
+    // color: #d3d5d9;
+    margin-bottom: 20px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.section{ 
+    padding: 50px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.img{ 
+    max-width: 100%; 
+}
+.btn{
+    border-radius: 30px;
+    width: 152px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: transparent;
+}
+.btn:hover{
+    background-color: #45bb0c;
+    color: #fff;
+}
+.btn--primary{
+    color: #45bb0c;
+    border: 2px solid #45bb0c;
+}
+.btn--inblock{
+    width: 30%;
+}
+.btn--block{
+    width: 100%;
+}
+.strong{
+    color: #45bb0c;
+}
+.sectionTitle{
+    font-size: 28px;
+}
+
+.bgColor1{
+    background: #ecf7c8;
+} 
+.bgColor2{
+    background: #f7e1c3;
+}
+.bgColor3{
+    background: #fddad4;
+}
+/* ---==== //Common classes ====--- */
