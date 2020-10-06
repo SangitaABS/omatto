@@ -6,11 +6,21 @@
     color: #fff;
 }
 .bannerSubContent{
-    width: 65%;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .bannertitle{
     font-size: 48px;
-    margin-bottom: 10px;
+}
+.bannerInfo{
+    font-size: 16px;
+    color: #fff;
+}
+.bannertitle, .bannerInfo{
+    margin-bottom: 40px;
 }
 .getInfoBtn{
     margin-right: 30px;
@@ -25,7 +35,6 @@
     grid-column-gap: 30px;
 }
 .collectionSubcontent{
-    // width: 33%;
     display: flex;
     align-items: center;
     padding: 40px 30px;
@@ -37,6 +46,18 @@
     margin-left: 30px;
 }
 /* ---===Collection Section Terminated here ===--- */
+.featureContent h2{
+    color: #000;
+    font-size: 36px;
+}
+.featureContent p{
+    color: #adb0b7;
+    font-size: 16px;
+}
+.featureContent h2, p{
+    text-align: center;
+    margin-bottom: 30px;
+}
 .featureSubcontent{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -47,6 +68,7 @@
 .itemContent{
     text-align: center;
     transition: all 2s;
+    padding: 20px 0;
 }
 .itemContent:hover{
     // text-align: center;

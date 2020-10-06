@@ -5,10 +5,10 @@
 }
 body{
     font-family: 'Lato';
+    // overflow: hidden;
 }
 /* ---==== Common classes ====--- */
-h1, h2, h3, h4, p, a{
-    // color: #d3d5d9;
+h2, h3, h4, p{
     margin-bottom: 20px;
 }
 ul{
@@ -17,7 +17,7 @@ ul{
 a{
     text-decoration: none;
 }
-.section{ 
+.SectionWrapper{ 
     padding: 50px 0;
 }
 .container{
@@ -41,7 +41,7 @@ a{
 }
 .btn:hover{
     background-color: #45bb0c;
-    color: #fff;
+    color: #f6f7f9;
 }
 .btn--primary{
     color: #45bb0c;
@@ -57,9 +57,13 @@ a{
     color: #45bb0c;
 }
 .sectionTitle{
-    font-size: 28px;
+    font-size: 42px;
+    color: #000;
 }
-
+.sectionInfo{
+    font-size: 16px;
+    color: #adb0b7;
+}
 .bgColor1{
     background: #ecf7c8;
 } 
