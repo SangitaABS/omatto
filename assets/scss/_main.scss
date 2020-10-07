@@ -1,8 +1,6 @@
 
 /* ---===Banner Section Start here ===--- */
 .banner{
-    background-image: url(../images/bg.jpg);
-    background-size: cover;
     color: #fff;
 }
 .bannerSubContent{
@@ -17,7 +15,6 @@
 }
 .bannerInfo{
     font-size: 16px;
-    color: #fff;
 }
 .bannertitle, .bannerInfo{
     margin-bottom: 40px;
@@ -47,11 +44,10 @@
 }
 /* ---===Collection Section Terminated here ===--- */
 .featureContent h2{
-    color: #000;
     font-size: 36px;
 }
 .featureContent p{
-    color: #adb0b7;
+    color: $primary-color;
     font-size: 16px;
 }
 .featureContent h2, p{
@@ -72,11 +68,30 @@
 }
 .itemContent:hover{
     // text-align: center;
-    color: #45bb0c;
+    color: $main-color;
     box-shadow: 4px 10px 51px #c7c7cd;
     transform: scale(1.1);
 }
-
+.itemImgBox{
+    position: relative;
+}
+.itemImg{
+    height: 170px;
+    padding: 10px;
+}
+.heartIconContainer{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+.AddToCart{
+    opacity: 0;
+}
+.itemContent:hover .AddToCart{
+    opacity: 1;
+}
 /* header --- 0d0e10----1b1f24
 
 shadow-f9f9fa

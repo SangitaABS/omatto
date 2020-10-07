@@ -1,8 +1,4 @@
 // ---===Header Section Start here ===---
-
-.header{
-    background-color: #0d0e10;
-}
 .headerContent, .navbar{
     display: flex;
     justify-content: space-between;
@@ -25,7 +21,7 @@
 }
 .navLink:hover{
     padding-bottom: 10px;
-    border-bottom: 2px solid #45bb0c;
+    border-bottom: 2px solid $main-color;
 }
 .toggle{
     display: none;
@@ -41,7 +37,7 @@
 {
     
 }
-// media queries for 
+// media queries for 575
 @media (max-width: 575px)
 {
     .headerContent{
@@ -71,7 +67,7 @@
         display: inline-block;
         position: absolute;
         right: 20px;
-        background: #45bb0c;
+        background: $main-color;
         cursor: pointer;
     }
     .toggle.active{

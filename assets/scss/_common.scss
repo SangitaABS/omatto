@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+$primary-color: #adb0b7;
+$primary-color2:#727682;
+$main-color:#45bb0c;
 body{
     font-family: 'Lato';
     // overflow: hidden;
@@ -40,12 +43,12 @@ a{
     background-color: transparent;
 }
 .btn:hover{
-    background-color: #45bb0c;
+    background-color: $main-color;
     color: #f6f7f9;
 }
 .btn--primary{
-    color: #45bb0c;
-    border: 2px solid #45bb0c;
+    color: $main-color;
+    border: 2px solid $main-color;
 }
 .btn--inblock{
     width: 30%;
@@ -54,15 +57,14 @@ a{
     width: 100%;
 }
 .strong{
-    color: #45bb0c;
+    color: $main-color;
 }
 .sectionTitle{
     font-size: 42px;
-    color: #000;
 }
 .sectionInfo{
     font-size: 16px;
-    color: #adb0b7;
+    color: $primary-color;
 }
 .bgColor1{
     background: #ecf7c8;

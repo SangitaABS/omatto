@@ -643,7 +643,6 @@ a {
 
 .sectionTitle {
   font-size: 42px;
-  color: #000;
 }
 
 .sectionInfo {
@@ -664,10 +663,6 @@ a {
 }
 
 /* ---==== //Common classes ====--- */
-.header {
-  background-color: #0d0e10;
-}
-
 .headerContent, .navbar {
   display: flex;
   justify-content: space-between;
@@ -777,8 +772,6 @@ a {
 
 /* ---===Banner Section Start here ===--- */
 .banner {
-  background-image: url(../images/bg.jpg);
-  background-size: cover;
   color: #fff;
 }
 
@@ -796,7 +789,6 @@ a {
 
 .bannerInfo {
   font-size: 16px;
-  color: #fff;
 }
 
 .bannertitle, .bannerInfo {
@@ -832,7 +824,6 @@ a {
 
 /* ---===Collection Section Terminated here ===--- */
 .featureContent h2 {
-  color: #000;
   font-size: 36px;
 }
 
@@ -864,6 +855,31 @@ a {
   color: #45bb0c;
   box-shadow: 4px 10px 51px #c7c7cd;
   transform: scale(1.1);
+}
+
+.itemImgBox {
+  position: relative;
+}
+
+.itemImg {
+  height: 170px;
+  padding: 10px;
+}
+
+.heartIconContainer {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+.AddToCart {
+  opacity: 0;
+}
+
+.itemContent:hover .AddToCart {
+  opacity: 1;
 }
 
 /* header --- 0d0e10----1b1f24
