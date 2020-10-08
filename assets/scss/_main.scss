@@ -1,29 +1,3 @@
-
-/* ---===Banner Section Start here ===--- */
-.banner{
-    color: #fff;
-}
-.bannerSubContent{
-    width: 70%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.bannertitle{
-    font-size: 48px;
-}
-.bannerInfo{
-    font-size: 16px;
-}
-.bannertitle, .bannerInfo{
-    margin-bottom: 40px;
-}
-.getInfoBtn{
-    margin-right: 30px;
-}
-/* ---===Banner Section Terminated here ===--- */
-
 /* ---===Collection Section start here ===--- */
 .collectionContent{
     display: grid;
@@ -50,7 +24,7 @@
     color: $primary-color;
     font-size: 16px;
 }
-.featureContent h2, p{
+.featureContent h2, .featureContent p{
     text-align: center;
     margin-bottom: 30px;
 }
@@ -86,6 +60,7 @@
     top: 15px;
     right: 30px;
 }
+
 .AddToCart{
     opacity: 0;
 }
@@ -96,3 +71,18 @@
 
 shadow-f9f9fa
 font-color adaeb5*/
+.heartIcon .heart__path{
+    fill: #fff;
+}
+
+.heartIcon .heart__path,.heartIcon .heart__stroke,.heartIcon{
+    transition: 0.3s;
+}
+.heartIcon.active {
+    transform: scale(1.1);
+}
+
+.heartIcon.active .heart__path,.heartIcon.active .heart__stroke{
+    fill: red;
+    
+}

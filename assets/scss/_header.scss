@@ -1,4 +1,13 @@
 // ---===Header Section Start here ===---
+.topHeader{
+    position: relative;
+}
+.header, .banner{
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
 .headerContent, .navbar{
     display: flex;
     justify-content: space-between;
@@ -40,6 +49,8 @@
 // media queries for 575
 @media (max-width: 575px)
 {
+
+    // ==== header start ===
     .headerContent{
         position: relative;
         padding: 20px;
@@ -73,7 +84,7 @@
     .toggle.active{
         background: #ea1d63;
     }
-    
+    // ==== header start ===
 }
 // media queries for 
 @media (max-width: 480px)
@@ -112,3 +123,25 @@
         }
 }
 // ---===Header Section Terminated here ===---
+
+/* ---===Banner Section Start here ===--- */
+.bannerContent{
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bannertitle{
+    font-size: 48px;
+}
+.bannerInfo{
+    font-size: 16px;
+}
+.bannertitle, .bannerInfo{
+    margin-bottom: 40px;
+}
+.getInfoBtn{
+    margin-right: 30px;
+}
+/* ---===Banner Section Terminated here ===--- */

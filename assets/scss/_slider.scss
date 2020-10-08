@@ -1,0 +1,17 @@
+.slick-dots li button:before{
+    content: "";
+}
+.slick-dots li{
+    display: block;
+ 
+}
+.slick-dots{
+    right: 50px;
+    bottom: 50%;
+    width: auto;
+}
+.slick-dots li button{
+    font-size: 50px;
+    line-height: 1;
+    color: black;
+}
