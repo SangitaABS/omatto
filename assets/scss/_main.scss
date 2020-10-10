@@ -1,4 +1,8 @@
 /* ---===Collection Section start here ===--- */
+.collection{
+    position: relative;
+    top: -58px
+}
 .collectionContent{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -8,20 +12,33 @@
 .collectionSubcontent{
     display: flex;
     align-items: center;
-    padding: 40px 30px;
+    padding: 40px 20px;
 }
-.productImg:hover{
-    transform: scale(1.5);
-}
+// .productImg:hover{
+//     transform: scale(1.5);
+// }
 .sectionContent{
     margin-left: 30px;
 }
+.productTitle{
+    font-size: 28px;
+    color: $green-light;
+    margin-bottom: 27px;
+}
+.productName{
+    font-size: 16px;
+    color: #adaeb5;
+    margin-bottom: 25px;
+}
 /* ---===Collection Section Terminated here ===--- */
+
+
+/* ---===Feature Section start here ===--- */
 .featureContent h2{
     font-size: 36px;
 }
 .featureContent p{
-    color: $primary-color;
+    color: $grey-light;
     font-size: 16px;
 }
 .featureContent h2, .featureContent p{
@@ -35,42 +52,33 @@
     grid-column-gap: 40px;
     grid-row-gap: 20px;
 }
-.itemContent{
+.featureItem{
     text-align: center;
     transition: all 2s;
-    padding: 20px 0;
+    padding: 20px;
 }
-.itemContent:hover{
-    // text-align: center;
-    color: $main-color;
-    box-shadow: 4px 10px 51px #c7c7cd;
+.featureItem:hover{
+    color: $green-light;
+    box-shadow: 10px 10px 30px rgba(199, 199, 205, 0.5);
     transform: scale(1.1);
 }
 .itemImgBox{
     position: relative;
 }
-.itemImg{
-    height: 170px;
-    padding: 10px;
-}
 .heartIconContainer{
     height: 20px;
     width: 20px;
     position: absolute;
-    top: 15px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
 }
 
 .AddToCart{
-    opacity: 0;
+    visibility: hidden;
 }
-.itemContent:hover .AddToCart{
-    opacity: 1;
+.featureItem:hover .AddToCart{
+    visibility: visible;
 }
-/* header --- 0d0e10----1b1f24
-
-shadow-f9f9fa
-font-color adaeb5*/
 .heartIcon .heart__path{
     fill: #fff;
 }
@@ -84,5 +92,11 @@ font-color adaeb5*/
 
 .heartIcon.active .heart__path,.heartIcon.active .heart__stroke{
     fill: red;
+
     
 }
+/* ---===Feature Section Terminated here ===--- */
+/* header --- 0d0e10----1b1f24
+
+shadow-f9f9fa
+font-color adaeb5*/

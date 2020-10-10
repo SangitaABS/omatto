@@ -3,17 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-$primary-color: #adb0b7;
-$primary-color2:#727682;
-$main-color:#45bb0c;
+$grey-light: #adb0b7;
+// $grey-dark:#727682;
+$green-light:#45bb0c;
 body{
     font-family: 'Lato';
     // overflow: hidden;
 }
 /* ---==== Common classes ====--- */
-h2, h3, h4, p{
-    margin-bottom: 20px;
-}
 ul{
     list-style: none;
 }
@@ -32,47 +29,50 @@ a{
 .img{ 
     max-width: 100%; 
 }
+button{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 .btn{
     border-radius: 30px;
-    width: 152px;
+    width: 160px;
     display: inline-block;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 14px;
-    background-color: transparent;
+    color: $green-light;
+    border: 2px solid $green-light;
+
 }
 .btn:hover{
-    background-color: $main-color;
+    background-color: $green-light;
     color: #f6f7f9;
+    transition: all 2s;
 }
 .btn--primary{
-    color: $main-color;
-    border: 2px solid $main-color;
-}
-.btn--inblock{
-    width: 30%;
-}
-.btn--block{
-    width: 100%;
+    width: 120px;
+    padding: 10px;
 }
 .strong{
-    color: $main-color;
+    color: $green-light;
 }
 .sectionTitle{
     font-size: 42px;
 }
 .sectionInfo{
-    font-size: 16px;
-    color: $primary-color;
+    color: $grey-light;
 }
-.bgColor1{
-    background: #ecf7c8;
+.bg-green-lighter{
+    background-color: #ecf7c8;
+    box-shadow: 4px 4px 6px rgba(236, 247, 200, 0.5);
 } 
-.bgColor2{
-    background: #f7e1c3;
+.bg-skin{
+    background-color: #f7e1c3;
+    box-shadow: 4px 4px 6px rgba(247, 225, 195, 0.5);
 }
-.bgColor3{
-    background: #fddad4;
+.bg-pinkishRed{
+    background-color: #fddad4;
+    box-shadow: 4px 4px 6px rgba(253, 218, 212, 0.5);
 }
 /* ---==== //Common classes ====--- */

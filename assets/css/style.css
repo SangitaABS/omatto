@@ -581,10 +581,6 @@ body {
 }
 
 /* ---==== Common classes ====--- */
-h2, h3, h4, p {
-  margin-bottom: 20px;
-}
-
 ul {
   list-style: none;
 }
@@ -608,33 +604,32 @@ a {
   max-width: 100%;
 }
 
+button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .btn {
   border-radius: 30px;
-  width: 152px;
+  width: 160px;
   display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-size: 14px;
-  background-color: transparent;
+  color: #45bb0c;
+  border: 2px solid #45bb0c;
 }
 
 .btn:hover {
   background-color: #45bb0c;
   color: #f6f7f9;
+  transition: all 2s;
 }
 
 .btn--primary {
-  color: #45bb0c;
-  border: 2px solid #45bb0c;
-}
-
-.btn--inblock {
-  width: 30%;
-}
-
-.btn--block {
-  width: 100%;
+  width: 120px;
+  padding: 10px;
 }
 
 .strong {
@@ -646,20 +641,22 @@ a {
 }
 
 .sectionInfo {
-  font-size: 16px;
   color: #adb0b7;
 }
 
-.bgColor1 {
-  background: #ecf7c8;
+.bg-green-lighter {
+  background-color: #ecf7c8;
+  box-shadow: 4px 4px 6px rgba(236, 247, 200, 0.5);
 }
 
-.bgColor2 {
-  background: #f7e1c3;
+.bg-skin {
+  background-color: #f7e1c3;
+  box-shadow: 4px 4px 6px rgba(247, 225, 195, 0.5);
 }
 
-.bgColor3 {
-  background: #fddad4;
+.bg-pinkishRed {
+  background-color: #fddad4;
+  box-shadow: 4px 4px 6px rgba(253, 218, 212, 0.5);
 }
 
 /* ---==== //Common classes ====--- */
@@ -669,6 +666,7 @@ a {
 
 .slick-dots li {
   display: block;
+  margin-bottom: 27px;
 }
 
 .slick-dots {
@@ -678,29 +676,14 @@ a {
 }
 
 .slick-dots li button {
-  font-size: 50px;
-  line-height: 1;
-  color: black;
+  font-size: 22px;
+  color: #fff;
 }
 
 .topHeader {
-  position: relative;
-}
-
-.header, .banner {
-  color: #fff;
   position: absolute;
-  top: 50px;
-  left: 100px;
-}
-
-.headerContent, .navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.headerContent {
-  align-items: center;
+  width: 100%;
+  top: 30px;
 }
 
 .logo {
@@ -708,126 +691,75 @@ a {
 }
 
 .nav {
-  width: 75%;
+  width: 80%;
 }
 
-.navLink {
-  color: #fefefe;
-  font-size: 16px;
+.headerContent, .navbar {
+  display: flex;
+}
+
+.headerContent {
+  align-items: flex-end;
 }
 
 .navbar {
-  padding: 10px 0;
+  justify-content: flex-end;
+}
+
+.navItem {
+  margin-left: 50px;
+}
+
+.navLink, .bannerTitleInfo {
+  color: #fefefe;
+}
+
+.navLink, .bannerInfo, .sectionInfo {
+  font-size: 16px;
 }
 
 .navLink:hover {
-  padding-bottom: 10px;
+  padding-bottom: 33px;
   border-bottom: 2px solid #45bb0c;
 }
 
 .toggle {
   display: none;
-  height: 26px;
-}
-
-@media (max-width: 575px) {
-  .headerContent {
-    position: relative;
-    padding: 20px;
-    width: 575px;
-  }
-  .nav {
-    position: absolute;
-    top: 70px;
-    right: -200px;
-    width: 200px;
-    transition: 0.5s;
-  }
-  .nav.active {
-    top: 70px;
-    right: 0;
-  }
-  .navbar {
-    display: block;
-    padding: 20px;
-  }
-  .navItem {
-    margin-bottom: 10px;
-  }
-  .toggle {
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-    background: #45bb0c;
-    cursor: pointer;
-  }
-  .toggle.active {
-    background: #ea1d63;
-  }
-}
-
-@media (max-width: 480px) {
-  .headerContent {
-    padding: 10px;
-    width: 480px;
-  }
-  .logo {
-    width: 50%;
-  }
-  .nav {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 50px);
-    background: #333;
-    top: 70px;
-    right: -100%;
-    transition: 0.5s;
-  }
-  .toggle {
-    display: block;
-    position: absolute;
-    right: 20px;
-  }
-  .navItem {
-    margin-bottom: 10px;
-  }
-  .nav.active {
-    top: 65px;
-    right: 0;
-  }
-  .navbar {
-    display: block;
-    text-align: center;
-  }
 }
 
 /* ---===Banner Section Start here ===--- */
 .bannerContent {
-  width: 70%;
+  width: 49%;
   height: 500px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.bannertitle {
+.bannerTitleInfo {
   font-size: 48px;
+  font-weight: 100;
+  line-height: 54px;
+  margin-bottom: 51px;
 }
 
 .bannerInfo {
-  font-size: 16px;
-}
-
-.bannertitle, .bannerInfo {
-  margin-bottom: 40px;
+  color: #fff;
+  line-height: 32px;
+  margin-bottom: 50px;
 }
 
 .getInfoBtn {
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 /* ---===Banner Section Terminated here ===--- */
 /* ---===Collection Section start here ===--- */
+.collection {
+  position: relative;
+  top: -58px;
+}
+
 .collectionContent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -838,18 +770,27 @@ a {
 .collectionSubcontent {
   display: flex;
   align-items: center;
-  padding: 40px 30px;
-}
-
-.productImg:hover {
-  transform: scale(1.5);
+  padding: 40px 20px;
 }
 
 .sectionContent {
   margin-left: 30px;
 }
 
+.productTitle {
+  font-size: 28px;
+  color: #45bb0c;
+  margin-bottom: 27px;
+}
+
+.productName {
+  font-size: 16px;
+  color: #adaeb5;
+  margin-bottom: 25px;
+}
+
 /* ---===Collection Section Terminated here ===--- */
+/* ---===Feature Section start here ===--- */
 .featureContent h2 {
   font-size: 36px;
 }
@@ -872,15 +813,15 @@ a {
   grid-row-gap: 20px;
 }
 
-.itemContent {
+.featureItem {
   text-align: center;
   transition: all 2s;
-  padding: 20px 0;
+  padding: 20px;
 }
 
-.itemContent:hover {
+.featureItem:hover {
   color: #45bb0c;
-  box-shadow: 4px 10px 51px #c7c7cd;
+  box-shadow: 10px 10px 30px rgba(199, 199, 205, 0.5);
   transform: scale(1.1);
 }
 
@@ -888,31 +829,22 @@ a {
   position: relative;
 }
 
-.itemImg {
-  height: 170px;
-  padding: 10px;
-}
-
 .heartIconContainer {
   height: 20px;
   width: 20px;
   position: absolute;
-  top: 15px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
 }
 
 .AddToCart {
-  opacity: 0;
+  visibility: hidden;
 }
 
-.itemContent:hover .AddToCart {
-  opacity: 1;
+.featureItem:hover .AddToCart {
+  visibility: visible;
 }
 
-/* header --- 0d0e10----1b1f24
-
-shadow-f9f9fa
-font-color adaeb5*/
 .heartIcon .heart__path {
   fill: #fff;
 }
@@ -928,3 +860,9 @@ font-color adaeb5*/
 .heartIcon.active .heart__path, .heartIcon.active .heart__stroke {
   fill: red;
 }
+
+/* ---===Feature Section Terminated here ===--- */
+/* header --- 0d0e10----1b1f24
+
+shadow-f9f9fa
+font-color adaeb5*/

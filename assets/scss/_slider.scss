@@ -3,7 +3,7 @@
 }
 .slick-dots li{
     display: block;
- 
+    margin-bottom: 27px;
 }
 .slick-dots{
     right: 50px;
@@ -11,7 +11,8 @@
     width: auto;
 }
 .slick-dots li button{
-    font-size: 50px;
-    line-height: 1;
-    color: black;
+    font-size: 22px;
+    // line-height: 1;
+    color: #fff;
+
 }
