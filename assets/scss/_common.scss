@@ -18,7 +18,7 @@ a{
     text-decoration: none;
 }
 .SectionWrapper{ 
-    padding: 50px 0;
+    padding: 60px 0;
 }
 .container{
     width: 100%;
@@ -33,12 +33,12 @@ button{
     outline: none;
     background-color: transparent;
     border: none;
+    display: inline-block;
     cursor: pointer;
 }
 .btn{
     border-radius: 30px;
     width: 160px;
-    display: inline-block;
     padding: 15px 20px;
     font-size: 14px;
     color: $green-light;
@@ -57,22 +57,42 @@ button{
 .strong{
     color: $green-light;
 }
+.navLink, .bannerInfo, .sectionInfo, .itemPrice{
+    font-size: 16px;
+}
+.sectionHead{
+    text-align: center;
+}
 .sectionTitle{
     font-size: 42px;
+    margin-bottom: 34px;
 }
 .sectionInfo{
+    line-height: 26px;
+    margin-bottom: 42px;
+}
+.sectionInfo, .itemTitle{
     color: $grey-light;
+}
+.itemTitle{
+    font-size: 18px;
+}
+.itemTitle, .itemPrice{
+    margin-bottom: 23px;
 }
 .bg-green-lighter{
     background-color: #ecf7c8;
-    box-shadow: 4px 4px 6px rgba(236, 247, 200, 0.5);
 } 
 .bg-skin{
     background-color: #f7e1c3;
-    box-shadow: 4px 4px 6px rgba(247, 225, 195, 0.5);
 }
 .bg-pinkishRed{
     background-color: #fddad4;
-    box-shadow: 4px 4px 6px rgba(253, 218, 212, 0.5);
+}
+.bg-black{
+    background-color: #25262a;
+}
+.bg-grey{
+    background-color: #f6f7f9;
 }
 /* ---==== //Common classes ====--- */

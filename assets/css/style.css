@@ -590,7 +590,7 @@ a {
 }
 
 .SectionWrapper {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .container {
@@ -608,13 +608,13 @@ button {
   outline: none;
   background-color: transparent;
   border: none;
+  display: inline-block;
   cursor: pointer;
 }
 
 .btn {
   border-radius: 30px;
   width: 160px;
-  display: inline-block;
   padding: 15px 20px;
   font-size: 14px;
   color: #45bb0c;
@@ -636,37 +636,59 @@ button {
   color: #45bb0c;
 }
 
+.navLink, .bannerInfo, .sectionInfo, .itemPrice {
+  font-size: 16px;
+}
+
+.sectionHead {
+  text-align: center;
+}
+
 .sectionTitle {
   font-size: 42px;
+  margin-bottom: 34px;
 }
 
 .sectionInfo {
+  line-height: 26px;
+  margin-bottom: 42px;
+}
+
+.sectionInfo, .itemTitle {
   color: #adb0b7;
+}
+
+.itemTitle {
+  font-size: 18px;
+}
+
+.itemTitle, .itemPrice {
+  margin-bottom: 23px;
 }
 
 .bg-green-lighter {
   background-color: #ecf7c8;
-  box-shadow: 4px 4px 6px rgba(236, 247, 200, 0.5);
 }
 
 .bg-skin {
   background-color: #f7e1c3;
-  box-shadow: 4px 4px 6px rgba(247, 225, 195, 0.5);
 }
 
 .bg-pinkishRed {
   background-color: #fddad4;
-  box-shadow: 4px 4px 6px rgba(253, 218, 212, 0.5);
+}
+
+.bg-black {
+  background-color: #25262a;
+}
+
+.bg-grey {
+  background-color: #f6f7f9;
 }
 
 /* ---==== //Common classes ====--- */
 .slick-dots li button:before {
   content: "";
-}
-
-.slick-dots li {
-  display: block;
-  margin-bottom: 27px;
 }
 
 .slick-dots {
@@ -675,9 +697,18 @@ button {
   width: auto;
 }
 
+.slick-dots li {
+  display: block;
+  margin-bottom: 27px;
+}
+
 .slick-dots li button {
   font-size: 22px;
   color: #fff;
+}
+
+.slick-dots li button:active {
+  color: #45bb0c;
 }
 
 .topHeader {
@@ -714,10 +745,6 @@ button {
   color: #fefefe;
 }
 
-.navLink, .bannerInfo, .sectionInfo {
-  font-size: 16px;
-}
-
 .navLink:hover {
   padding-bottom: 33px;
   border-bottom: 2px solid #45bb0c;
@@ -739,7 +766,7 @@ button {
 .bannerTitleInfo {
   font-size: 48px;
   font-weight: 100;
-  line-height: 54px;
+  line-height: 1.13;
   margin-bottom: 51px;
 }
 
@@ -795,16 +822,6 @@ button {
   font-size: 36px;
 }
 
-.featureContent p {
-  color: #adb0b7;
-  font-size: 16px;
-}
-
-.featureContent h2, .featureContent p {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .featureSubcontent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -816,13 +833,17 @@ button {
 .featureItem {
   text-align: center;
   transition: all 2s;
-  padding: 20px;
+  padding-top: 33px;
 }
 
 .featureItem:hover {
   color: #45bb0c;
   box-shadow: 10px 10px 30px rgba(199, 199, 205, 0.5);
   transform: scale(1.1);
+}
+
+.featureItem:hover .itemTitle {
+  color: #45bb0c;
 }
 
 .itemImgBox {
@@ -843,6 +864,7 @@ button {
 
 .featureItem:hover .AddToCart {
   visibility: visible;
+  transition: all 1s;
 }
 
 .heartIcon .heart__path {
@@ -850,7 +872,7 @@ button {
 }
 
 .heartIcon .heart__path, .heartIcon .heart__stroke, .heartIcon {
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 .heartIcon.active {
@@ -861,8 +883,59 @@ button {
   fill: red;
 }
 
-/* ---===Feature Section Terminated here ===--- */
-/* header --- 0d0e10----1b1f24
+.itemContent {
+  padding: 29px 0;
+  text-align: center;
+}
 
-shadow-f9f9fa
-font-color adaeb5*/
+/* ---===//Feature Section Terminated here ===--- */
+/* ---===Services Section Start here ===--- */
+.sevices__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 44px;
+  padding: 12px 0;
+}
+
+.service__content {
+  display: flex;
+}
+
+.icon__container {
+  margin-right: 18px;
+  width: 20%;
+}
+
+.service__btn {
+  border-radius: 50%;
+  background-color: #3b3c41;
+  padding: 7px;
+}
+
+.service__btn:hover {
+  background-color: #45bb0c;
+}
+
+.service__icon {
+  width: 100%;
+  fill: #fff;
+}
+
+.service__title {
+  margin-bottom: 14px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.service__info {
+  color: #adaeb5;
+  font-size: 16px;
+}
+
+/* ---===//Services Section Terminated here ===--- */
+.provider__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 44px;
+}
