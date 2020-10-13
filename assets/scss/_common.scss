@@ -54,6 +54,11 @@ button{
     width: 120px;
     padding: 10px;
 }
+.flex__center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .strong{
     color: $green-light;
 }

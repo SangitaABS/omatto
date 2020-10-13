@@ -632,6 +632,12 @@ button {
   padding: 10px;
 }
 
+.flex__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .strong {
   color: #45bb0c;
 }
@@ -687,28 +693,32 @@ button {
 }
 
 /* ---==== //Common classes ====--- */
-.slick-dots li button:before {
+.slider .slick-dots li button:before {
   content: "";
 }
 
-.slick-dots {
+.slider .slick-dots {
   right: 50px;
   bottom: 50%;
   width: auto;
 }
 
-.slick-dots li {
+.slider .slick-dots li {
   display: block;
   margin-bottom: 27px;
 }
 
-.slick-dots li button {
+.slider .slick-dots li button {
   font-size: 22px;
   color: #fff;
 }
 
-.slick-dots li button:active {
+.slider .slick-dots li button:active {
   color: #45bb0c;
+}
+
+.review__slider .slick-dots li button {
+  border: 2px solid #45bb0c;
 }
 
 .topHeader {
@@ -758,9 +768,6 @@ button {
 .bannerContent {
   width: 49%;
   height: 500px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .bannerTitleInfo {
@@ -925,17 +932,44 @@ button {
   margin-bottom: 14px;
   color: #fff;
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .service__info {
   color: #adaeb5;
-  font-size: 16px;
 }
 
 /* ---===//Services Section Terminated here ===--- */
+/* ---===Providers Section Terminated here ===--- */
 .provider__inner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 44px;
 }
+
+.logo__container {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* ---===//Providers Section Terminated here ===--- */
+/* ---===Review Section Terminated here ===--- */
+.review__content {
+  position: relative;
+}
+
+.review__subcontent {
+  position: absolute;
+  top: 45px;
+  left: 30px;
+  color: #fff;
+  height: 350px;
+  justify-content: space-between;
+}
+
+.readmore__btn {
+  color: #fff;
+}
+
+/* ---===//Review Section Terminated here ===--- */

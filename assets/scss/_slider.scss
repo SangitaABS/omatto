@@ -1,23 +1,32 @@
-.slick-dots li button:before{
+// === Slider for Banner Image Open here ===
+.slider .slick-dots li button:before{
     content: "";
 }
-.slick-dots{
+.slider .slick-dots{
     right: 50px;
     bottom: 50%;
     width: auto;
 }
-.slick-dots li{
+.slider .slick-dots li{
     display: block;
     margin-bottom: 27px;
 }
-.slick-dots li button{
+.slider .slick-dots li button{
     font-size: 22px;
     // line-height: 1;
     color: #fff;
 }
-.slick-dots li button:active{
-    color: #45bb0c;
+.slider .slick-dots li button:active{
+    color: $green-light;
 }
-// .slick-dots li:active{
-//     color: #45bb0c;
-// }
+// .slick-dots li:active{color: #45bb0c;}
+// === Slider for Banner Image Close here ===
+
+
+// === Slider for Review Section Open here ===
+// .review__slider .slick-dots{width: 100%;}
+.review__slider .slick-dots li button{
+    border: 2px solid $green-light;
+}
+
+// === Slider for Review Section Close here ===
