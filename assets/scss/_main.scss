@@ -107,7 +107,6 @@
 .service__btn{
     border-radius: 50%;
     background-color: #3b3c41;
-    padding: 7px;
 }
 .service__btn:hover{
     background-color: $green-light;
@@ -151,6 +150,9 @@
     color: #fff;
     height: 350px;
     justify-content: space-between;
+}
+.margin-more{
+    margin-bottom: 50px;
 }
 .readmore__btn{
     color: #fff;

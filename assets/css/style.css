@@ -772,7 +772,7 @@ button {
 
 .bannerTitleInfo {
   font-size: 48px;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 1.13;
   margin-bottom: 51px;
 }
@@ -916,7 +916,6 @@ button {
 .service__btn {
   border-radius: 50%;
   background-color: #3b3c41;
-  padding: 7px;
 }
 
 .service__btn:hover {
@@ -968,8 +967,66 @@ button {
   justify-content: space-between;
 }
 
+.margin-more {
+  margin-bottom: 50px;
+}
+
 .readmore__btn {
   color: #fff;
 }
 
 /* ---===//Review Section Terminated here ===--- */
+.footer__inner, .footer__bottom, .copyright__rightmost {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu__title {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+
+.menu__list__item {
+  margin-bottom: 24px;
+}
+
+.menu__link, .copyright__info {
+  color: #727682;
+}
+
+.social__menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialMedia {
+  width: 20px;
+  height: 20px;
+  fill: #5b5b5b;
+}
+
+.menu__list--gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.gallery__item {
+  margin: 0;
+}
+
+.ctrl__icon {
+  width: 34px;
+}
+
+.copyright {
+  border-top: 2px solid #2d2e33;
+  padding: 18px 0;
+}
+
+.copyright__rightmost {
+  width: 20%;
+}
