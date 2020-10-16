@@ -1,20 +1,28 @@
 /* ---===Collection Section start here ===--- */
 .collection{
     position: relative;
-    top: -58px
+    margin-top: -80px;
+}
+.collectionContent, .featureSubcontent, .sevices__inner, .provider__inner{
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-rows: 1fr;
 }
 .collectionContent{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 30px;
+}
+.collectionSubcontent, .service__content{
+    display: flex;
 }
 .collectionSubcontent{
-    display: flex;
     align-items: center;
     padding: 40px 20px;
+    transition: all 2s;
 }
-// .productImg:hover{transform: scale(1.5);}
+.collectionSubcontent:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 30px rgba(199, 199, 205, 0.3);
+}
 .sectionContent{
     margin-left: 30px;
 }
@@ -31,11 +39,7 @@
 /* ---===Collection Section Terminated here ===--- */
 
 /* ---===Feature Section start here ===--- */
-.featureContent h2{
-    font-size: 36px;
-}
 .featureSubcontent{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 40px;
@@ -44,32 +48,35 @@
 .featureItem{
     text-align: center;
     transition: all 2s;
-    padding-top: 33px;
+    padding: 35px 10px;
+    position: relative;
+    // padding-top: 33px;
 }
 .featureItem:hover{
-    color: $green-light;
-    box-shadow: 10px 10px 30px rgba(199, 199, 205, 0.5);
+    box-shadow: 10px 10px 30px rgba(199, 199, 205, 0.3);
     transform: scale(1.1);
+    color: $green-light;
 }
 .featureItem:hover .itemTitle{
     color: $green-light;
-}
-.itemImgBox{
-    position: relative;
 }
 .heartIconContainer{
     height: 20px;
     width: 20px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    right: 20px;
+    top: 20px;
 }
 .AddToCart{
     visibility: hidden;
+    transition: all 2s;
 }
 .featureItem:hover .AddToCart{
     visibility: visible;
-    transition: all 1s;
+}
+.heart__svg{
+    width: 25px;
+    height: 20px;
 }
 .heartIcon .heart__path{
     fill: #fff;
@@ -85,38 +92,39 @@
     fill: red;   
 }
 .itemContent{
-    padding: 29px 0;
+    margin-top: 30px;
+    // padding: 29px 0;
     text-align: center;
 }
 /* ---===//Feature Section Terminated here ===--- */
 
 /* ---===Services Section Start here ===--- */
 .sevices__inner{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 44px;
-    padding: 12px 0;
-}
-.service__content{
-    display: flex;
+    grid-template-columns: 1fr 1.02fr 1fr 0.8fr;
+    grid-column-gap: 40px;
+    // padding: 12px 0;
 }
 .icon__container{
     margin-right: 18px;
-    width: 20%;
-}
-.service__btn{
+    width: 58px;
+    height: 100%;
     border-radius: 50%;
     background-color: #3b3c41;
+    text-align: center;
+    transition: all 0.3s;
 }
-.service__btn:hover{
+.service__content:hover .icon__container{
     background-color: $green-light;
 }
 .service__icon{
-    width: 100%;
+    width: 40px;
+    height: 40px;
     fill: #fff;
+    margin: 10px 0;
+    padding: 3px;
 }
 .service__title{
-    margin-bottom: 14px;
+    margin-bottom: 15px;
     color: #fff;
     font-size: 22px;
     font-weight: 400;
@@ -128,14 +136,13 @@
 
 /* ---===Providers Section Terminated here ===--- */
 .provider__inner{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 44px;
 }
 .logo__container{
     background-color: #fff;
     text-align: center;
-    padding: 15px 0;
+    padding: 30px 0;
 }
 /* ---===//Providers Section Terminated here ===--- */
 
@@ -150,11 +157,35 @@
     color: #fff;
     height: 350px;
     justify-content: space-between;
+    z-index: 999;
 }
 .margin-more{
     margin-bottom: 50px;
 }
-.readmore__btn{
+.readmore__link{
     color: #fff;
 }
+.arrow{
+    fill: #fff;
+    width:28px; 
+    height:24px;
+    margin-left: 15px;
+    vertical-align: -webkit-baseline-middle;
+}
+.review__slider__cards{
+    position: relative;
+}
+.after__effect::after{
+    content: "";
+    position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    height: 100%;
+    width: 96%;
+    z-index: 111;
+    top: 0;
+    left: 0;
+}
+
+
 /* ---===//Review Section Terminated here ===--- */
+/*Filter styles*/

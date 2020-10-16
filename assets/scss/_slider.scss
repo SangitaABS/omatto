@@ -1,32 +1,61 @@
 // === Slider for Banner Image Open here ===
 .slider .slick-dots li button:before{
-    content: "";
+    color: #fff;
+    opacity: 1;
+    font-size: 22px;
+    z-index: 9999;
+}
+.slider #slick-slide-control00:before{
+    content: "01";    
+}
+.slider #slick-slide-control01:before{
+    content: "02";
+}
+.slider #slick-slide-control02:before{
+    content: "03";
 }
 .slider .slick-dots{
     right: 50px;
-    bottom: 50%;
+    bottom: 35%;
     width: auto;
 }
 .slider .slick-dots li{
     display: block;
     margin-bottom: 27px;
 }
-.slider .slick-dots li button{
-    font-size: 22px;
-    // line-height: 1;
-    color: #fff;
-}
 .slider .slick-dots li button:active{
     color: $green-light;
 }
-// .slick-dots li:active{color: #45bb0c;}
+.slick-dots li.slick-active button:before{
+    color: $green-light;
+}
+
 // === Slider for Banner Image Close here ===
 
 
 // === Slider for Review Section Open here ===
-// .review__slider .slick-dots{width: 100%;}
-.review__slider .slick-dots li button{
-    border: 2px solid $green-light;
+.review__slider .slick-dots{
+    bottom: -60px;
 }
-
+.review__slider .slick-dots li{
+    margin: 0 25px;
+}
+.review__slider .slick-dots li button:before{
+    content: "";
+}
+.review__slider .slick-dots li button:before{
+    border: 2px solid $green-light;
+    height: 12px;
+    opacity: 1;
+    width: 12px;
+}
+.review__slider .slick-dots li.slick-active button:before{
+    background-color: $green-light;
+    // transform: scale(1.5);
+    height:15px;
+    width: 45px;
+    left: -16.5px;
+    top: -1.5px;
+    // transform: translateX(-50%);
+}
 // === Slider for Review Section Close here ===

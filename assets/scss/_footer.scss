@@ -1,8 +1,7 @@
-.footer__inner, .footer__bottom, .copyright__rightmost{
+.footer__inner, .social__menu__list, .footer__bottom, .copyright__rightmost{
     display: flex;
     justify-content: space-between;
 }
-
 .footer__menu__title{
     color: #fff;
     font-size: 18px;
@@ -13,10 +12,6 @@
 }
 .menu__link, .copyright__info{
     color: #727682;
-}
-.social__menu__list{
-    display: flex;
-    justify-content: space-between;
 }
 .socialMedia{
     width: 20px;
@@ -34,7 +29,7 @@
 .gallery__item{
     margin: 0;
 }
-.ctrl__icon{
+.up__icon{
     width: 34px;
 }
 .copyright{

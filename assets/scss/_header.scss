@@ -25,9 +25,21 @@
 .navLink, .bannerTitleInfo{
     color: #fefefe;
 }
-.navLink:hover{
-    padding-bottom: 33px;
-    border-bottom: 2px solid $green-light;
+.navLink{
+    position: relative;
+}
+.navLink::after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background-color: $green-light;
+    width: 0;
+    height: 2px;
+    transition: all 0.2s;
+}
+.navLink:hover::after{
+    width: 100%;
 }
 .toggle{
     display: none;
@@ -40,95 +52,17 @@
 }
 .bannerTitleInfo{
     font-size: 48px;
-    font-weight: 400;
     line-height: 1.13;
     margin-bottom: 51px;
+    font-weight: 400;
 }
 .bannerInfo{
     color: #fff;
     line-height: 32px;
     margin-bottom: 50px;
+    letter-spacing: 0.5px;
 }
 .getInfoBtn{
     margin-right: 32px;
 }
 /* ---===Banner Section Terminated here ===--- */
-
-// media queries for 575
-// @media (max-width: 575px)
-// {
-
-//     // ==== header start ===
-//     .headerContent{
-//         position: relative;
-//         padding: 20px;
-//         width: 575px;
-//     }
-//     .nav{
-//         position: absolute;
-//         top: 70px;
-//         right: -200px;
-//         width: 200px;
-//         transition: 0.5s;
-//     }
-//     .nav.active{
-//         top: 70px;
-//         right: 0;
-//     }
-//     .navbar{
-//         display:block;
-//         padding: 20px;
-//     }
-//     .navItem{
-//         margin-bottom: 10px;
-//     }
-//     .toggle{
-//         display: inline-block;
-//         position: absolute;
-//         right: 20px;
-//         background: $green-light;
-//         cursor: pointer;
-//     }
-//     .toggle.active{
-//         background: #ea1d63;
-//     }
-//     // ==== header start ===
-    
-// }
-// // media queries for 
-// @media (max-width: 480px)
-// {
-//         .headerContent{
-//             padding: 10px;
-//             width: 480px;
-//         }
-//         .logo{
-//             width: 50%;
-//         }
-//         .nav{
-//             position: absolute;
-//             width: 100%;
-//             height: calc(100vh - 50px);
-//             background: #333;
-//             top: 70px;
-//             right: -100%;
-//             transition: 0.5s;
-//         }
-//         .toggle{
-//             display: block;
-//             position: absolute;
-//             right: 20px;
-//         }
-//         .navItem{
-//             margin-bottom: 10px;
-//         }       
-//         .nav.active{
-//             top: 65px;
-//             right: 0;
-//         }
-//         .navbar{
-//             display: block;
-//             text-align: center;
-//         }
-// }
-// ---===Header Section Terminated here ===---

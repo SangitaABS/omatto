@@ -1,13 +1,127 @@
 // Responsive code of Header
 // media queries for 991
-// @media (max-width: 991px)
-// {
-//    .header{
-//        padding: 50px;
-//    }
-// }
-// // media queries for 767
-// @media (max-width: 767px)
-// {
+@media (max-width: 991px)
+{
+   .topHeader{
+       padding: 0 20px;
+   }
+   .navItem{
+    margin-left: 30px;
+}
+/* ---===Banner Section Start here ===--- */
+.bannerContent{
+    width: 50%;
+    height: 400px;
+}
+.bannerTitleInfo{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.bannerInfo{
+    margin-bottom: 25px;
+}
+/* ---===Banner Section close here ===--- */
+}
+// media queries for 767
+@media (max-width: 767px)
+{
+    .topHeader{
+        padding: 0 20px;
+    }
+    .navItem{
+     margin-left: 20px;
+ }
+/* ---===Banner Section Start here ===--- */
+ .bannerContent{
+     width: 60%;
+     height: 300px;
+ }
+ .bannerTitleInfo{
+     font-size: 35px;
+     margin-bottom: 20px;
+     font-weight: 400;
+ }
+ .bannerInfo{
+     margin-bottom: 25px;
+ }
+/* ---===Banner Section close here ===--- */
+}
+// media queries for 575
+@media (max-width: 575px)
+{
+
+    // ==== header start ===
+    .headerContent{
+        position: relative;
+        padding: 20px;
+        width: 575px;
+    }
+    .nav{
+        position: absolute;
+        top: 70px;
+        right: -200px;
+        width: 200px;
+        transition: 0.5s;
+    }
+    .nav.active{
+        top: 70px;
+        right: 0;
+    }
+    .navbar{
+        display:block;
+        padding: 20px;
+    }
+    .navItem{
+        margin-bottom: 10px;
+    }
+    .toggle{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        background: $green-light;
+        cursor: pointer;
+    }
+    .toggle.active{
+        background: #ea1d63;
+    }
+    // ==== header close ===
     
-// }
+}
+// // media queries for 
+@media (max-width: 480px)
+{
+        .headerContent{
+            padding: 10px;
+            width: 480px;
+        }
+        .logo{
+            width: 50%;
+        }
+        .nav{
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 50px);
+            background: #333;
+            top: 70px;
+            right: -100%;
+            transition: 0.5s;
+        }
+        .toggle{
+            display: block;
+            position: absolute;
+            right: 20px;
+        }
+        .navItem{
+            margin-bottom: 10px;
+        }       
+        .nav.active{
+            top: 65px;
+            right: 0;
+        }
+        .navbar{
+            display: block;
+            text-align: center;
+        }
+}
+// ---===Header Section Terminated here ===---
