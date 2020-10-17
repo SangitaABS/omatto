@@ -1,4 +1,10 @@
-.footer__inner, .social__menu__list, .footer__bottom, .copyright__rightmost{
+.footer__inner{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 0.8fr 0.8fr 1.2fr;
+    column-gap: 40px;
+} 
+.socialmedia__list, .footer__bottom, .copyright__rightmost{
     display: flex;
     justify-content: space-between;
 }
@@ -13,6 +19,15 @@
 .menu__link, .copyright__info{
     color: #727682;
 }
+.socialmedia__list{
+    position: absolute;
+}
+.social__media__item{
+    margin: 0 30px 0 0;
+}
+.margin-leftzero{
+    margin-left: 0;
+}
 .socialMedia{
     width: 20px;
     height: 20px;
@@ -23,8 +38,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 10px;
-    row-gap: 10px;
-    
+    row-gap: 10px;    
 }
 .gallery__item{
     margin: 0;

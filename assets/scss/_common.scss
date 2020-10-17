@@ -29,6 +29,9 @@ button{
 .SectionWrapper{ 
     padding: 100px 0;
 }
+.Section__wrapper__sm{ 
+    padding: 50px 0;
+}
 .container{
     width: 100%;
     max-width: 1200px;
@@ -45,7 +48,6 @@ button{
     font-size: 14px;
     color: $green-light;
     border: 2px solid $green-light;
-
 }
 .btn:hover{
     background-color: $green-light;

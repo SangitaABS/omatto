@@ -1,18 +1,16 @@
 let qw = document.querySelector('#slick-slide-control00');
 // qw.innerHTML("01");
 
-// ===script for toogle open here ===
+// -----=====script for toogle open here =====-----
 function toggle__menu(){
     let nav = document.querySelector(".nav");
     let toggle = document.querySelector(".toggle");
     nav.classList.toggle('active');
     toggle.classList.toggle('active');
 }
+// -----=====script for toggle close here =====-----
 
-
-// ===script for toggle close here ===
-
-// ==== heartIcon button Start ====
+// -----===== heartIcon button Start =====-----
 let heartIcon = document.querySelectorAll(".heartIcon");
 for(let i of heartIcon){
   i.addEventListener('click',function(){
@@ -20,9 +18,9 @@ for(let i of heartIcon){
     this.classList.toggle('active');
   });
 }
-// ==== heartIcon button End ====
+// -----===== heartIcon button End =====-----
 
-// === Banner Slider Script open here ===
+// -----===== Banner Slider Script open here =====-----
 $('.slider').slick({
     dots: true,
     arrows: false,
@@ -32,14 +30,82 @@ $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 2000
   });
-// === Banner Slider Script closed here ===
+// -----===== Banner Slider Script closed here =====-----
 
-// === Slider for review section open here ===
+// -----===== Slider for review section open here =====-----
 $('.review__slider').slick({
   dots: true,
   arrows: false,
   // infinite: true,
+  // centerMode: true,
+  // centerPadding: '60px',
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        // centerMode: true,
+        // centerPadding: '20px',
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
-// === Slider for review section open here ===
+// -----===== Slider for review section close here =====-----
+
+// $('.review__slider').slick({
+//   dots: true,
+//   arrows: false,
+//   centerMode: true,
+//   centerPadding: '60px',
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   responsive: [
+//     {
+//       breakpoint: 767,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 3
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
+

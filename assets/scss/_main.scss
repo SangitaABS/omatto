@@ -3,7 +3,7 @@
     position: relative;
     margin-top: -80px;
 }
-.collectionContent, .featureSubcontent, .sevices__inner, .provider__inner{
+.collectionContent, .featureSubcontent, .sevices__inner, .provider__content{
     display: grid;
     grid-column-gap: 30px;
     grid-template-rows: 1fr;
@@ -135,7 +135,7 @@
 /* ---===//Services Section Terminated here ===--- */
 
 /* ---===Providers Section Terminated here ===--- */
-.provider__inner{
+.provider__content{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 44px;
 }
@@ -172,10 +172,10 @@
     margin-left: 15px;
     vertical-align: -webkit-baseline-middle;
 }
-.review__slider__cards{
+.review__slider__card{
     position: relative;
 }
-.after__effect::after{
+.review__content::after{
     content: "";
     position: absolute;
     background-color:rgba(0,0,0,0.5);
