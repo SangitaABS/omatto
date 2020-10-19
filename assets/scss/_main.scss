@@ -29,7 +29,7 @@
 .productTitle{
     font-size: 28px;
     color: $green-light;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 }
 .productName{
     font-size: 16px;
@@ -42,7 +42,6 @@
 .featureSubcontent{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 40px;
     grid-row-gap: 20px;
 }
 .featureItem{
@@ -113,9 +112,9 @@
     text-align: center;
     transition: all 0.3s;
 }
-.service__content:hover .icon__container{
-    background-color: $green-light;
-}
+// .service__content:hover .icon__container{
+//     background-color: $green-light;
+// }
 .service__icon{
     width: 40px;
     height: 40px;
@@ -131,6 +130,10 @@
 }
 .service__info{
     color: #adaeb5;
+}
+// .service__title:hover .icon__container,
+.service__info:hover .icon__container{
+    background-color: $green-light;
 }
 /* ---===//Services Section Terminated here ===--- */
 
@@ -159,6 +162,9 @@
     justify-content: space-between;
     z-index: 999;
 }
+.review__img{
+    width: 100%;
+}
 .margin-more{
     margin-bottom: 50px;
 }
@@ -174,13 +180,14 @@
 }
 .review__slider__card{
     position: relative;
+    padding-right: 10px;
 }
-.review__content::after{
+.review__img__container::after{
     content: "";
     position: absolute;
     background-color:rgba(0,0,0,0.5);
     height: 100%;
-    width: 96%;
+    width: 100%;
     z-index: 111;
     top: 0;
     left: 0;

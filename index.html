@@ -30,7 +30,7 @@
     <!-----===== //Image Slider end here =====----->
 
     <!-----===== Header and Banner Section =====----->
-    <div class="topHeader">
+    <div class="topHeader" id="top__header">
         <div class="container">
             <!----==== Header Section ====---->
             <header class="header">
@@ -39,13 +39,13 @@
                     <div class="logo">
                         <a class="logoLink" href="#">
                             <img class="logoImg img" src="assets/images/logo2.png" alt="">
-                        </a>
+                        </a>    
                     </div>
                     <!---=== //Logo ===--->
                     <!---=== Navigation Bar ===--->
                     <nav class="nav">
                         <ul class="navbar">
-                            <li class="navItem"><a class="navLink" href="#">HOME</a></li>
+                            <li class="navItem"><a class="navLink active" href="#">HOME</a></li>
                             <li class="navItem"><a class="navLink" href="#">PRODUCTS</a></li>
                             <li class="navItem"><a class="navLink" href="#">DRIED FOODS</a></li>
                             <li class="navItem"><a class="navLink" href="#">PAGES</a></li>
@@ -55,7 +55,7 @@
                     </nav>
                     <!---=== //Navigation Bar ===--->
                     <!---=== Toggle ===--->
-                    <div class="toggle">
+                    <div class="toggle" onclick="toggle__menu()">
                         <svg class="toogle__svg" height="25px" width="25px" viewBox="0 -53 384 384"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -83,9 +83,7 @@
                         </div>
                         <div class="bannerInfo">
                             <p class="banner__parainfo">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora adipisci nesciunt
-                                placeat
-                                quibusdam aspernatur repellat sed hic reiciendis cum atque?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </p>
                         </div>
                     </div>
@@ -147,8 +145,7 @@
         <div class="featureContent container">
             <div class="sectionHead">
                 <h2 class="sectionTitle">Featured Products</h2>
-                <p class="sectionInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente tempora,
-                    sint iusto quas quod itaque beatae ducimus asperiores temporibus?</p>
+                <p class="sectionInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <ul class="featureSubcontent">
                 <li class="featureItem">
@@ -425,8 +422,8 @@
         <div class="featureContent container">
             <div class="sectionHead">
                 <h2 class="sectionTitle">Latest Products</h2>
-                <p class="sectionInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente tempora,
-                    sint iusto quas quod itaque beatae ducimus asperiores temporibus?</p>
+                <p class="sectionInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
             </div>
             <ul class="featureSubcontent">
                 <li class="featureItem">
@@ -616,8 +613,7 @@
             <div class="provider__inner">
                 <div class="sectionHead">
                     <h2 class="sectionTitle">Our Farmers</h2>
-                    <p class="sectionInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente
-                        tempora,sint iusto quas quod itaque beatae ducimus asperiores temporibus?</p>
+                    <p class="sectionInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div class="provider__content">
                     <div class="logo__container">
@@ -647,8 +643,7 @@
         <div class="container">
             <div class="sectionHead">
                 <h2 class="sectionTitle">Latest From Blog</h2>
-                <p class="sectionInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente tempora,
-                    sint iusto quas quod itaque beatae ducimus asperiores temporibus?</p>
+                <p class="sectionInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="review__slider">
                 <div class="review__slider__card">
@@ -1050,26 +1045,28 @@
         </div>
     </footer>
     <!-----===== //Footer Section =====----->
-    <section class="copyright bg-black">
+    <div class="copyright bg-black">
         <div class="container">
             <div class="footer__bottom">
                 <div class="copyright__info">
                     2020 all rights reserved.Power by Madbrains
                 </div>
-                <a class="up__link" href="#">
-                    <svg class="up__icon" enable-background="new 0 0 54 54" version="1.1" viewBox="0 0 54 54"
-                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="#2b4424">
+                <div class="up__link__box">
+                    <a class="up__link" href="#top__header">
+                        <svg class="up__icon" enable-background="new 0 0 54 54" version="1.1" viewBox="0 0 54 54"
+                            xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#2b4424">
+                                <path
+                                    d="m53 27c0 14.359-11.641 26-26 26s-26-11.641-26-26 11.641-26 26-26 26 11.641 26 26z" />
+                                <path
+                                    d="M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2    C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z" />
+                            </g>
                             <path
-                                d="m53 27c0 14.359-11.641 26-26 26s-26-11.641-26-26 11.641-26 26-26 26 11.641 26 26z" />
-                            <path
-                                d="M27,54C12.112,54,0,41.888,0,27S12.112,0,27,0s27,12.112,27,27S41.888,54,27,54z M27,2    C13.215,2,2,13.215,2,27s11.215,25,25,25s25-11.215,25-25S40.785,2,27,2z" />
-                        </g>
-                        <path
-                            d="m39 32.706c-0.256 0-0.512-0.098-0.707-0.293l-11.293-11.293-11.293 11.293c-0.391 0.391-1.023 0.391-1.414 0s-0.391-1.023 0-1.414l11.498-11.498c0.666-0.666 1.752-0.666 2.418 0l11.498 11.498c0.391 0.391 0.391 1.023 0 1.414-0.195 0.195-0.451 0.293-0.707 0.293z"
-                            fill="#43b00e" />
-                    </svg>
-                </a>
+                                d="m39 32.706c-0.256 0-0.512-0.098-0.707-0.293l-11.293-11.293-11.293 11.293c-0.391 0.391-1.023 0.391-1.414 0s-0.391-1.023 0-1.414l11.498-11.498c0.666-0.666 1.752-0.666 2.418 0l11.498 11.498c0.391 0.391 0.391 1.023 0 1.414-0.195 0.195-0.451 0.293-0.707 0.293z"
+                                fill="#43b00e" />
+                        </svg>
+                    </a>
+                </div>
                 <div class="copyright__rightmost">
                     <div class="provider">
                         <img class="payment__provider img" src="assets/images/masterCard.png" alt="">
@@ -1086,7 +1083,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
 

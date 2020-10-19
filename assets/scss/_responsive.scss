@@ -7,9 +7,6 @@
         }
         /* ---=== Common Classes End here ===--- */ 
     /* ---=== Header Section Start here ===--- */
-        .topHeader{
-            padding: 0 20px;
-        }
         .navItem{
             margin-left: 30px;
         }
@@ -22,11 +19,6 @@
         }
         .bannerTitleInfo{
             font-size: 40px;
-            margin-bottom: 30px;
-            font-weight: 400;
-        }
-        .bannerInfo{
-            margin-bottom: 25px;
         }
     /* ---=== Banner Section End here ===--- */
 
@@ -93,9 +85,6 @@
     /* ---=== Common Classes Start here ===--- */
     /* ---=== Common Classes End here ===--- */   
         /* ---=== Header Section Start here ===--- */
-            .topHeader{
-                padding: 0 20px;
-            }
             .navItem{
                 margin-left: 20px;
             }
@@ -104,15 +93,14 @@
         /* ---=== Banner Section Start here ===--- */
             .bannerContent{
                 width: 60%;
-                height: 380px;
+                height: 350px;
             }
-            .bannerTitleInfo{
-                font-size: 35px;
-                font-weight: 400;
-            }
-            .bannerTitleInfo, .bannerInfo{
-                margin-bottom: 15px;
-            }
+            // .bannerTitleInfo{
+            //     font-size: 35px;
+            // }
+            // .bannerTitleInfo, .bannerInfo{
+            //     margin-bottom: 15px;
+            // }
             .bannerInfo{
                 line-height: 1.3;
             }
@@ -122,20 +110,27 @@
             .collection{
                 margin-top: -50px;
             }
-            .collectionsubContent{
-                display: block;
-                text-align: center;
-                padding: 10px;
+            // .collectionContent{
+            //     display: block;
+            //     text-align: center;
+            //     padding: 10px;
+            // }
+            .collectionContent{
+                grid-template-columns: 1fr 1fr;
+                row-gap: 20px;
             }
-            .productTitle{
-                font-size: 20px;
+            .sectionContent{
+                margin-left: 20px;
             }
-            .productTitle, .productName{
-                margin-bottom: 10px;
-            }
-            .shopNowBtn{
-                width: 100px;
-            }   
+            // .productTitle{
+            //     font-size: 20px;
+            // }
+            // .productTitle, .productName{
+            //     margin-bottom: 10px;
+            // }
+            // .shopNowBtn{
+            //     width: 100px;
+            // }   
         /* ---=== Collection Section End here ===--- */
     
         /* ---=== Feature & Products Section Start here ===--- */
@@ -162,7 +157,10 @@
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 20px;
             row-gap: 30px;
-        } 
+        }
+        .copyright__rightmost {
+            width: 25%;
+        }
         /* ---=== Footer & Copyright Section End here ===--- */
 }
 
@@ -175,31 +173,43 @@
         }
         .btn{
             width: 120px;
-            padding: 10px;
+            padding: 8px 5px;
+            font-size: 14px;
         }
-        /* ---=== Common Classes End here ===--- */ 
+        /* ---=== Common Classes End here ===--- */
+        /* ---=== Position of slider's content start here ===--- */
+        .slider .slick-dots{
+            bottom: 15%;
+            right: 30px;
+        }
+        /* ---=== Position of slider's content End here ===--- */
     /* ---=== Header Section Start here ===--- */
-    .headerContent{
-        position: relative;
-        padding: 20px;
+    .topHeader{
+        top: 20px;
     }
     .nav{
         position: absolute;
-        top: 70px;
-        right: -200px;
-        width: 200px;
+        width: 100%;
+        top: 40px;
+        right: -100%;
         transition: 0.5s;
-    }
-    .nav.active{
-        top: 70px;
-        right: 0;
+        background-color:#20292c;
+        z-index: 999999;
     }
     .navbar{
         display:block;
-        padding: 20px;
+        padding: 20px 0;
+        text-align: center;
     }
     .navItem{
-        margin-bottom: 10px;
+        margin-bottom: 35px;
+    }
+    .navLink::after{
+        bottom: -20px;
+    }       
+    .nav.active{
+        top: 40px;
+        right: 0;
     }
     .toggle{
         display: inline-block;
@@ -208,19 +218,21 @@
         background: $green-light;
         cursor: pointer;
     }
-    .toggle.active{
+    .toggle:active{
         background: #ea1d63;
     }
+    // .headerContent{
+    //     position: relative;
+    // }
     /* ---=== Header Section close here ===--- */
 
     /* ---=== Banner Section Start here ===--- */
     .bannerContent{
         width: 80%;
-        height: 200px;
+        height: 220px;
     }
     .bannerTitleInfo{
         font-size: 30px;
-        font-weight: 400;
     }
     .bannerInfo{
         line-height: 1;
@@ -229,33 +241,40 @@
 
     /* ---=== Collection Section Start here ===--- */
     .collectionContent{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 70%;
+        margin: 0 auto;
     }   
     /* ---=== Collection Section End here ===--- */
 
     /* ---=== Feature & Products Section Start here ===--- */
-    .featureSubcontent{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    .featureSubcontent, .sevices__inner, .provider__content, .footer__inner{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
     }
     /* ---=== Feature & Products Section End here ===--- */
 
     /* ---=== Services Section Start here ===--- */
-    .sevices__inner{
-        grid-template-columns: 1fr 1fr;
-    } 
     /* ---=== Services Section End here ===--- */
 
     /* ---=== Providers Section Start here ===--- */
-    .provider__content, .footer__inner{
-        grid-template-columns: 1fr 1fr;
-    }
     /* ---=== Providers Section End here ===--- */
 
     /* ---=== Review Section Start here ===--- */
     /* ---=== Review Section End here ===--- */
 
-    /* ---=== Footer & Copyright Section Start here ===--- */ 
+    /* ---=== Footer & Copyright Section Start here ===--- */
+    .footer__bottom{
+        display: block;
+        text-align: center;
+    }
+    .copyright__info, .up__link__box{
+        margin-bottom: 20px;
+    }
+    .copyright__rightmost{
+        width: 50%;
+        margin: 0 auto;
+    }
     /* ---=== Footer & Copyright Section End here ===--- */   
 }
 
@@ -263,59 +282,36 @@
 @media (max-width: 480px)
 {
         /* ---=== Header Section Start here ===--- */
-        .headerContent{
-            padding: 10px;
-            width: 480px;
-        }
-        .logo{
-            width: 50%;
-        }
-        .nav{
-            position: absolute;
-            width: 100%;
-            height: calc(100vh - 50px);
-            background: #333;
-            top: 70px;
-            right: -100%;
-            transition: 0.5s;
-        }
-        .toggle{
-            display: block;
-            position: absolute;
-            right: 20px;
-        }
-        .navItem{
-            margin-bottom: 10px;
-        }       
-        .nav.active{
-            top: 65px;
-            right: 0;
-        }
-        .navbar{
-            display: block;
-            text-align: center;
-        }
         /* ---=== Header Section close here ===--- */
 
         /* ---=== Banner Section Start here ===--- */
+        .bannerTitleInfo{
+            font-size: 25px;
+        }
+        .bannerInfo{
+            font-size: 14px;
+        }
+        .bannerTitleInfo, .bannerInfo{
+            margin-bottom: 10px;
+        }
         /* ---=== Banner Section End here ===--- */
 
         /* ---=== Collection Section Start here ===--- */
         /* ---=== Collection Section End here ===--- */
 
         /* ---=== Feature & Products Section Start here ===--- */
-        .featureSubcontent{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-        } 
         /* ---=== Feature & Products Section End here ===--- */
 
         /* ---=== Services Section Start here ===--- */
         /* ---=== Services Section End here ===--- */
 
         /* ---=== Providers Section Start here ===--- */
-        .provider__content{
+        .sevices__inner, .provider__content, .footer__inner{
             grid-template-columns: 1fr;
+            row-gap: 20px;
+            width: 50%;
+            margin: 0 auto;
+
         }
         /* ---=== Providers Section End here ===--- */
 
@@ -323,8 +319,8 @@
         /* ---=== Review Section End here ===--- */
 
         /* ---=== Footer & Copyright Section Start here ===--- */
-        .footer__inner{
-            grid-template-columns: 1fr;
+        .footer__menu{
+            text-align: center;
         }
         /* ---=== Footer & Copyright Section End here ===--- */
 }

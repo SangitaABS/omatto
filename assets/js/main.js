@@ -36,21 +36,10 @@ $('.slider').slick({
 $('.review__slider').slick({
   dots: true,
   arrows: false,
-  // infinite: true,
-  // centerMode: true,
-  // centerPadding: '60px',
+  infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
     {
       breakpoint: 767,
       settings: {
@@ -63,17 +52,9 @@ $('.review__slider').slick({
     {
       breakpoint: 575,
       settings: {
-        // centerMode: true,
-        // centerPadding: '20px',
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true
       }
     }
   ]
