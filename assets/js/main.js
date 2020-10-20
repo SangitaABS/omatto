@@ -41,11 +41,10 @@ $('.review__slider').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true,
         dots: true
       }
     },
@@ -54,6 +53,7 @@ $('.review__slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        infinite: true,
         dots: true
       }
     }

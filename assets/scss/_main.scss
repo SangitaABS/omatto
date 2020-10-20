@@ -17,7 +17,7 @@
 .collectionSubcontent{
     align-items: center;
     padding: 40px 20px;
-    transition: all 2s;
+    transition: all 2s linear;
 }
 .collectionSubcontent:hover{
     transform: scale(1.05);
@@ -29,10 +29,9 @@
 .productTitle{
     font-size: 28px;
     color: $green-light;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .productName{
-    font-size: 16px;
     color: #adaeb5;
     margin-bottom: 25px;
 }
@@ -46,17 +45,14 @@
 }
 .featureItem{
     text-align: center;
-    transition: all 2s;
+    transition: all 2s linear;
     padding: 35px 10px;
     position: relative;
     // padding-top: 33px;
 }
 .featureItem:hover{
     box-shadow: 10px 10px 30px rgba(199, 199, 205, 0.3);
-    transform: scale(1.1);
-    color: $green-light;
-}
-.featureItem:hover .itemTitle{
+    transform: scale(1);
     color: $green-light;
 }
 .heartIconContainer{
@@ -68,7 +64,7 @@
 }
 .AddToCart{
     visibility: hidden;
-    transition: all 2s;
+    transition: all 0.3s linear;
 }
 .featureItem:hover .AddToCart{
     visibility: visible;
@@ -95,6 +91,16 @@
     // padding: 29px 0;
     text-align: center;
 }
+.itemTitle{
+    color: #adaeb5;
+    font-size: 18px;
+}
+.itemTitle, .itemPrice{
+    margin-bottom: 20px;
+}
+.itemPrice, .service__title{
+    font-size: 22px;
+}
 /* ---===//Feature Section Terminated here ===--- */
 
 /* ---===Services Section Start here ===--- */
@@ -112,9 +118,9 @@
     text-align: center;
     transition: all 0.3s;
 }
-// .service__content:hover .icon__container{
-//     background-color: $green-light;
-// }
+.service__content:hover .icon__container{
+    background-color: $green-light;
+}
 .service__icon{
     width: 40px;
     height: 40px;
@@ -125,15 +131,10 @@
 .service__title{
     margin-bottom: 15px;
     color: #fff;
-    font-size: 22px;
     font-weight: 400;
 }
 .service__info{
     color: #adaeb5;
-}
-// .service__title:hover .icon__container,
-.service__info:hover .icon__container{
-    background-color: $green-light;
 }
 /* ---===//Services Section Terminated here ===--- */
 

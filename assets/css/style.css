@@ -598,11 +598,11 @@ button {
 }
 
 .SectionWrapper {
-  padding: 100px 0;
+  padding: 90px 0;
 }
 
 .Section__wrapper__sm {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .container {
@@ -622,13 +622,13 @@ button {
   padding: 15px 20px;
   font-size: 14px;
   color: #45bb0c;
-  border: 2px solid #45bb0c;
+  border: 1px solid #45bb0c;
+  transition: all 1s linear;
 }
 
 .btn:hover {
   background-color: #45bb0c;
   color: #f6f7f9;
-  transition: all 2s;
 }
 
 .btn--primary {
@@ -646,7 +646,7 @@ button {
   color: #45bb0c;
 }
 
-.navLink, .bannerInfo, .sectionInfo, .itemPrice {
+.navLink, .bannerInfo, .sectionInfo, .productName {
   font-size: 16px;
 }
 
@@ -654,29 +654,21 @@ button {
   text-align: center;
 }
 
-.sectionTitle {
+.itemPrice, .sectionTitle {
   color: #000;
+}
+
+.sectionTitle {
   font-size: 42px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   font-weight: 600;
 }
 
 .sectionInfo {
-  width: 50%;
-  margin: 0 auto 42px;
-  line-height: 26px;
-}
-
-.sectionInfo, .itemTitle {
   color: #adb0b7;
-}
-
-.itemTitle {
-  font-size: 18px;
-}
-
-.itemTitle, .itemPrice {
-  margin-bottom: 23px;
+  width: 50%;
+  margin: 0 auto 40px;
+  line-height: 1.6;
 }
 
 .bg-green-lighter {
@@ -704,7 +696,7 @@ button {
   color: #afafaf;
   opacity: 1;
   font-size: 22px;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .slider #slick-slide-control00:before {
@@ -727,7 +719,7 @@ button {
 
 .slider .slick-dots li {
   display: block;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .slider .slick-dots li button:active {
@@ -769,6 +761,7 @@ button {
   position: absolute;
   width: 100%;
   top: 30px;
+  overflow: hidden;
 }
 
 .logo {
@@ -837,7 +830,7 @@ button {
 
 .bannerInfo {
   color: #fff;
-  line-height: 32px;
+  line-height: 2;
   margin-bottom: 25px;
   letter-spacing: 0.5px;
 }
@@ -847,6 +840,39 @@ button {
 }
 
 /* ---===Banner Section Terminated here ===--- */
+/* ---===Follow us Section Start here ===--- */
+.contact {
+  position: fixed;
+  top: calc(50% - 130px);
+  left: 25px;
+  z-index: 99999;
+  width: 30px;
+}
+
+.contact__item {
+  margin: 15px 0;
+  color: #f0f1f5;
+}
+
+.follow__us {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  letter-spacing: 1px;
+}
+
+.contact__svg {
+  height: 20px;
+  width: 20px;
+  fill: #f0f1f5;
+  fill-rule: evenodd;
+  transition: all 1s linear;
+}
+
+.contact__link:hover .contact__svg {
+  fill: #45bb0c;
+}
+
+/* ---===Follow us Section Terminated here ===--- */
 /* ---===Collection Section start here ===--- */
 .collection {
   position: relative;
@@ -870,7 +896,7 @@ button {
 .collectionSubcontent {
   align-items: center;
   padding: 40px 20px;
-  transition: all 2s;
+  transition: all 2s linear;
 }
 
 .collectionSubcontent:hover {
@@ -885,11 +911,10 @@ button {
 .productTitle {
   font-size: 28px;
   color: #45bb0c;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .productName {
-  font-size: 16px;
   color: #adaeb5;
   margin-bottom: 25px;
 }
@@ -904,18 +929,14 @@ button {
 
 .featureItem {
   text-align: center;
-  transition: all 2s;
+  transition: all 2s linear;
   padding: 35px 10px;
   position: relative;
 }
 
 .featureItem:hover {
   box-shadow: 10px 10px 30px rgba(199, 199, 205, 0.3);
-  transform: scale(1.1);
-  color: #45bb0c;
-}
-
-.featureItem:hover .itemTitle {
+  transform: scale(1);
   color: #45bb0c;
 }
 
@@ -929,7 +950,7 @@ button {
 
 .AddToCart {
   visibility: hidden;
-  transition: all 2s;
+  transition: all 0.3s linear;
 }
 
 .featureItem:hover .AddToCart {
@@ -962,6 +983,19 @@ button {
   text-align: center;
 }
 
+.itemTitle {
+  color: #adaeb5;
+  font-size: 18px;
+}
+
+.itemTitle, .itemPrice {
+  margin-bottom: 20px;
+}
+
+.itemPrice, .service__title {
+  font-size: 22px;
+}
+
 /* ---===//Feature Section Terminated here ===--- */
 /* ---===Services Section Start here ===--- */
 .sevices__inner {
@@ -979,6 +1013,10 @@ button {
   transition: all 0.3s;
 }
 
+.service__content:hover .icon__container {
+  background-color: #45bb0c;
+}
+
 .service__icon {
   width: 40px;
   height: 40px;
@@ -990,16 +1028,11 @@ button {
 .service__title {
   margin-bottom: 15px;
   color: #fff;
-  font-size: 22px;
   font-weight: 400;
 }
 
 .service__info {
   color: #adaeb5;
-}
-
-.service__info:hover .icon__container {
-  background-color: #45bb0c;
 }
 
 /* ---===//Services Section Terminated here ===--- */
@@ -1093,10 +1126,6 @@ button {
 
 .menu__link, .copyright__info {
   color: #727682;
-}
-
-.socialmedia__list {
-  position: absolute;
 }
 
 .social__media__item {

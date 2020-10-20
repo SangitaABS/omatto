@@ -3,6 +3,7 @@
     position: absolute;
     width: 100%;
     top: 30px;
+    overflow: hidden;
 }
 .logo{
     width: 20%;
@@ -59,7 +60,7 @@
 }
 .bannerInfo{
     color: #fff;
-    line-height: 32px;
+    line-height: 2;
     margin-bottom: 25px;
     letter-spacing: 0.5px;
 }
@@ -67,3 +68,32 @@
     margin-right: 32px;
 }
 /* ---===Banner Section Terminated here ===--- */
+
+/* ---===Follow us Section Start here ===--- */
+.contact{
+    position: fixed;
+    top: calc(50% - 130px);
+    left: 25px;
+    z-index: 99999;
+    width: 30px;
+}
+.contact__item{
+    margin: 15px 0;
+    color: #f0f1f5;
+}
+.follow__us{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    letter-spacing: 1px;
+}
+.contact__svg{
+    height: 20px;
+    width: 20px;
+    fill: #f0f1f5;
+    fill-rule: evenodd;
+    transition: all 1s linear;
+}
+.contact__link:hover .contact__svg{
+    fill: #45bb0c;
+}
+/* ---===Follow us Section Terminated here ===--- */

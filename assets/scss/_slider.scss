@@ -3,7 +3,7 @@
     color: #afafaf;
     opacity: 1;
     font-size: 22px;
-    z-index: 9999;
+    z-index: 999;
 }
 .slider #slick-slide-control00:before{
     content: "01";    
@@ -21,7 +21,7 @@
 }
 .slider .slick-dots li{
     display: block;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 }
 .slider .slick-dots li button:active{
     color: $green-light;
