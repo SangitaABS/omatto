@@ -2,7 +2,7 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 0.8fr 0.8fr 0.8fr 1.2fr;
-    column-gap: 40px;
+    grid-gap: 40px;
 } 
 .socialmedia__list, .footer__bottom, .copyright__rightmost{
     display: flex;
@@ -11,10 +11,10 @@
 .footer__menu__title{
     color: #fff;
     font-size: 18px;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
 }
 .menu__list__item{
-    margin-bottom: 24px;
+    margin-bottom: 15px;
 }
 .menu__link, .copyright__info{
     color: #727682;
@@ -32,10 +32,9 @@
 }
 .menu__list--gallery{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;    
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+   
 }
 .gallery__item{
     margin: 0;
@@ -45,7 +44,7 @@
 }
 .copyright{
     border-top: 2px solid #2d2e33;
-    padding: 18px 0;
+    padding: 20px 0;
 }
 .copyright__rightmost{
     width: 20%;

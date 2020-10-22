@@ -623,7 +623,7 @@ button {
   font-size: 14px;
   color: #45bb0c;
   border: 1px solid #45bb0c;
-  transition: all 1s linear;
+  transition: all 0.3s linear;
 }
 
 .btn:hover {
@@ -660,7 +660,7 @@ button {
 
 .sectionTitle {
   font-size: 42px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-weight: 600;
 }
 
@@ -817,8 +817,12 @@ button {
 
 /* ---===Banner Section Start here ===--- */
 .bannerContent {
-  width: 49%;
+  width: 100%;
   height: 500px;
+}
+
+.bannerHead {
+  width: 50%;
 }
 
 .bannerTitleInfo {
@@ -836,7 +840,7 @@ button {
 }
 
 .getInfoBtn {
-  margin-right: 32px;
+  margin-right: 30px;
 }
 
 /* ---===Banner Section Terminated here ===--- */
@@ -858,6 +862,7 @@ button {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   letter-spacing: 1px;
+  color: #f0f1f5;
 }
 
 .contact__svg {
@@ -881,12 +886,11 @@ button {
 
 .collectionContent, .featureSubcontent, .sevices__inner, .provider__content {
   display: grid;
-  grid-column-gap: 30px;
-  grid-template-rows: 1fr;
 }
 
 .collectionContent {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
 }
 
 .collectionSubcontent, .service__content {
@@ -895,7 +899,7 @@ button {
 
 .collectionSubcontent {
   align-items: center;
-  padding: 40px 20px;
+  padding: 25px 15px;
   transition: all 2s linear;
 }
 
@@ -911,25 +915,23 @@ button {
 .productTitle {
   font-size: 28px;
   color: #45bb0c;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .productName {
   color: #adaeb5;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 /* ---===Collection Section Terminated here ===--- */
 /* ---===Feature Section start here ===--- */
 .featureSubcontent {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .featureItem {
   text-align: center;
-  transition: all 2s linear;
+  transition: all 0.3s linear;
   padding: 35px 10px;
   position: relative;
 }
@@ -950,7 +952,6 @@ button {
 
 .AddToCart {
   visibility: hidden;
-  transition: all 0.3s linear;
 }
 
 .featureItem:hover .AddToCart {
@@ -1038,7 +1039,7 @@ button {
 /* ---===//Services Section Terminated here ===--- */
 /* ---===Providers Section Terminated here ===--- */
 .provider__content {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 44px;
 }
 
@@ -1056,10 +1057,11 @@ button {
 
 .review__subcontent {
   position: absolute;
-  top: 45px;
-  left: 30px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 45px 20px;
   color: #fff;
-  height: 350px;
   justify-content: space-between;
   z-index: 999;
 }
@@ -1106,7 +1108,7 @@ button {
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 0.8fr 0.8fr 0.8fr 1.2fr;
-  column-gap: 40px;
+  grid-gap: 40px;
 }
 
 .socialmedia__list, .footer__bottom, .copyright__rightmost {
@@ -1117,11 +1119,11 @@ button {
 .footer__menu__title {
   color: #fff;
   font-size: 18px;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .menu__list__item {
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 
 .menu__link, .copyright__info {
@@ -1144,10 +1146,8 @@ button {
 
 .menu__list--gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
 .gallery__item {
@@ -1160,7 +1160,7 @@ button {
 
 .copyright {
   border-top: 2px solid #2d2e33;
-  padding: 18px 0;
+  padding: 20px 0;
 }
 
 .copyright__rightmost {
