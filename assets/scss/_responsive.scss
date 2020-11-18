@@ -7,15 +7,15 @@
         }
         /* ---=== Common Classes End here ===--- */ 
     /* ---=== Header Section Start here ===--- */
-        .navItem{
+        .nav__item{
             margin-left: 30px;
         }
     /* ---=== Header Section close here ===--- */
 
     /* ---=== Banner Section Start here ===--- */
         .bannerContent{
-            width: 50%;
-            height: 400px;
+            align-items: center;
+            height: 350px;
         }
         .bannerTitleInfo{
             font-size: 40px;
@@ -23,35 +23,31 @@
     /* ---=== Banner Section End here ===--- */
 
     /* ---=== Collection Section Start here ===--- */
-        .collectionContent{
-            grid-column-gap: 20px;
-        }
-        .collectionsubContent{
-            padding: 30px 10px;
-        }
         .sectionContent{
             margin-left: 10px;
         }
         .productTitle{
             font-size: 24px;
-            margin-bottom: 20px;
-        }
-        .productName{
-            margin-bottom: 18px;
-        }    
+        } 
     /* ---=== Collection Section End here ===--- */
 
     /* ---=== Feature & Products Section Start here ===--- */
         .featureSubcontent{
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+        .featureItem{
+            box-shadow: 10px 10px 30px rgba(199, 199, 205, 0.3);
+        }
+        .AddToCart{
+            visibility: visible;
         }
     /* ---=== Feature & Products Section End here ===--- */
 
     /* ---=== Services Section Start here ===--- */
         .sevices__inner{
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-column-gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
         }
         .icon__container{
             margin-right: 10px;
@@ -67,8 +63,8 @@
     /* ---=== Services Section End here ===--- */
 
     /* ---=== Providers Section Start here ===--- */
-        .provider__content{
-            grid-column-gap: 30px;
+        .provider__content, .footer__inner{
+            grid-gap: 30px;
         }
     /* ---=== Providers Section End here ===--- */
 
@@ -85,22 +81,21 @@
     /* ---=== Common Classes Start here ===--- */
     /* ---=== Common Classes End here ===--- */   
         /* ---=== Header Section Start here ===--- */
-            .navItem{
+            .nav__item{
                 margin-left: 20px;
             }
         /* ---=== Header Section End here ===--- */
     
         /* ---=== Banner Section Start here ===--- */
-            .bannerContent{
-                width: 60%;
-                height: 350px;
+            // .bannerContent{
+            //     height: 350px;
+            // }
+            .bannerHead{
+                width: 50%;
             }
-            // .bannerTitleInfo{
-            //     font-size: 35px;
-            // }
-            // .bannerTitleInfo, .bannerInfo{
-            //     margin-bottom: 15px;
-            // }
+            .bannerTitleInfo{
+                font-size: 35px;
+            }
             .bannerInfo{
                 line-height: 1.3;
             }
@@ -108,56 +103,39 @@
     
         /* ---=== Collection Section Start here ===--- */
             .collection{
-                margin-top: -50px;
+                margin-top: 30px;
             }
-            // .collectionContent{
-            //     display: block;
-            //     text-align: center;
-            //     padding: 10px;
-            // }
-            .collectionContent{
-                grid-template-columns: 1fr 1fr;
-                row-gap: 20px;
+            .collectionContent, .featureSubcontent, .sevices__inner{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .collectionSubcontent{
+                padding: 30px 20px;
             }
             .sectionContent{
-                margin-left: 20px;
-            }
-            // .productTitle{
-            //     font-size: 20px;
-            // }
-            // .productTitle, .productName{
-            //     margin-bottom: 10px;
-            // }
-            // .shopNowBtn{
-            //     width: 100px;
-            // }   
+                margin-left: 30px;
+            }  
         /* ---=== Collection Section End here ===--- */
     
         /* ---=== Feature & Products Section Start here ===--- */
+        
             .featureSubcontent{
-                grid-column-gap: 10px;
+                grid-gap: 30px;
             }
         /* ---=== Feature & Products Section End here ===--- */
     
         /* ---=== Services Section Start here ===--- */
-            .sevices__inner, .provider__content{
-                grid-template-columns: 1fr 1fr 1fr;
-                row-gap: 20px;
-            }
         /* ---=== Services Section End here ===--- */
     
         /* ---=== Providers Section Start here ===--- */
+        .provider__content, .footer__inner{
+            grid-template-columns: repeat(3, 1fr);
+        }
         /* ---=== Providers Section End here ===--- */
     
         /* ---=== Review Section Start here ===--- */
         /* ---=== Review Section End here ===--- */
     
         /* ---=== Footer & Copyright Section Start here ===--- */
-        .footer__inner{
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 20px;
-            row-gap: 30px;
-        }
         .copyright__rightmost {
             width: 25%;
         }
@@ -184,6 +162,9 @@
         }
         /* ---=== Position of slider's content End here ===--- */
     /* ---=== Header Section Start here ===--- */
+    .logo{
+        width: 40%;
+    }
     .topHeader{
         top: 20px;
     }
@@ -192,7 +173,7 @@
         width: 100%;
         top: 40px;
         right: -100%;
-        transition: 0.5s;
+        transition: 0.3s;
         background-color:#20292c;
         z-index: 999999;
     }
@@ -201,16 +182,20 @@
         padding: 20px 0;
         text-align: center;
     }
-    .navItem{
+    .nav__item{
         margin-bottom: 35px;
     }
-    .navLink::after{
-        bottom: -20px;
-    }       
+    // .nav__link::after{
+    //     bottom: -20px;
+    // }       
     .nav.active{
-        top: 40px;
+        // top: 60px;
         right: 0;
     }
+    .nav__link{
+        transition: 0.3s;
+    }
+
     .toggle{
         display: inline-block;
         position: absolute;
@@ -218,8 +203,11 @@
         background: $green-light;
         cursor: pointer;
     }
-    .toggle:active{
-        background: #ea1d63;
+    .toggle:active .close{
+        display:block;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     // .headerContent{
     //     position: relative;
@@ -228,14 +216,14 @@
 
     /* ---=== Banner Section Start here ===--- */
     .bannerContent{
-        width: 80%;
-        height: 220px;
+        padding-top: 20px;
+        justify-content: start;
+    }
+    .bannerHead{
+        width: 60%;
     }
     .bannerTitleInfo{
         font-size: 30px;
-    }
-    .bannerInfo{
-        line-height: 1;
     }
     /* ---=== Banner Section End here ===--- */
 
@@ -285,6 +273,9 @@
         /* ---=== Header Section close here ===--- */
 
         /* ---=== Banner Section Start here ===--- */
+        .bannerContent{
+            height: 100vh;
+        }
         .bannerTitleInfo{
             font-size: 25px;
         }

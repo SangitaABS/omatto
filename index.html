@@ -38,19 +38,19 @@
                     <!---=== Logo ===--->
                     <div class="logo">
                         <a class="logoLink" href="#">
-                            <img class="logoImg img" src="assets/images/logo2.png" alt="">
+                            <img class="logoImg img" src="assets/images/logo.png" alt="">
                         </a>
                     </div>
                     <!---=== //Logo ===--->
                     <!---=== Navigation Bar ===--->
                     <nav class="nav">
                         <ul class="navbar">
-                            <li class="navItem"><a class="navLink active" href="#">HOME</a></li>
-                            <li class="navItem"><a class="navLink" href="#">PRODUCTS</a></li>
-                            <li class="navItem"><a class="navLink" href="#">DRIED FOODS</a></li>
-                            <li class="navItem"><a class="navLink" href="#">PAGES</a></li>
-                            <li class="navItem"><a class="navLink" href="#">BLOG</a></li>
-                            <li class="navItem"><a class="navLink" href="#">CONTACT US</a></li>
+                            <li class="nav__item"><a class="nav__link active" href="#">HOME</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">PRODUCTS</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">DRIED FOODS</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">PAGES</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">BLOG</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">CONTACT US</a></li>
                         </ul>
                     </nav>
                     <!---=== //Navigation Bar ===--->
@@ -66,6 +66,13 @@
                                 d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
                         </svg>
                     </div>
+                    <div class="close">
+                        <svg class="close__icon" width="311pt" height="311pt" viewBox="0 0 311 311.08" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m16.035 311.08c-4.0977 0-8.1953-1.5586-11.309-4.6953-6.25-6.25-6.25-16.383 0-22.633l279.06-279.06c6.25-6.25 16.383-6.25 22.633 0s6.25 16.383 0 22.637l-279.06 279.06c-3.1367 3.1172-7.2344 4.6953-11.328 4.6953z"></path>
+                            <path d="m295.12 311.08c-4.0977 0-8.1914-1.5586-11.309-4.6953l-279.08-279.06c-6.25-6.2539-6.25-16.387 0-22.637s16.383-6.25 22.637 0l279.06 279.06c6.25 6.25 6.25 16.383 0 22.633-3.1367 3.1172-7.2305 4.6953-11.305 4.6953z"></path>
+                          </svg>
+                    </div>
+
                     <!---=== //Toggle ===--->
                 </div>
             </header>
@@ -88,8 +95,8 @@
                         </div>
                     </div>
                     <div class="button__box">
-                        <button class="getInfoBtn btn">GET INFO</button>
-                        <button class="readMoreBtn btn">READ MORE</button>
+                        <button class="getInfoBtn btn btn--primary">GET INFO</button>
+                        <button class="readMoreBtn btn btn--primary">READ MORE</button>
                     </div>
                 </div>
             </section>
@@ -152,7 +159,7 @@
                     <div class="sectionContent">
                         <h2 class="productTitle">Bokchoy bok</h2>
                         <p class="productName">Vegetable</p>
-                        <button class="shopNowBtn btn btn--primary">Shop Now</button>
+                        <button class="shopNowBtn btn">Shop Now</button>
                     </div>
                 </div>
 
@@ -163,7 +170,7 @@
                     <div class="sectionContent">
                         <h2 class="productTitle">Potato</h2>
                         <p class="productName">Vegetable</p>
-                        <button class="shopNowBtn btn btn--primary">Shop Now</button>
+                        <button class="shopNowBtn btn">Shop Now</button>
                     </div>
                 </div>
 
@@ -174,7 +181,7 @@
                     <div class="sectionContent">
                         <h2 class="productTitle">Tomato</h2>
                         <p class="productName">Vegetable</p>
-                        <button class="shopNowBtn btn btn--primary">Shop Now</button>
+                        <button class="shopNowBtn btn">Shop Now</button>
                     </div>
                 </div>
             </div>
@@ -210,7 +217,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Organic Peas</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -232,7 +239,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Brinjal</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -254,7 +261,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Garlic</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -276,7 +283,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Pepper</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -298,7 +305,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Organic Brown Onions</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -320,7 +327,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Fresh Lady Finger</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -342,7 +349,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Cauliflower</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -364,7 +371,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Ginger</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
             </ul>
@@ -404,7 +411,6 @@
                             <path d="m46.5 34.208a5.577 5.577 0 0 1-5.656-5.481 1 1 0 1 1 2 0 3.661 3.661 0 1 0 3.656-3.48 1 1 0 0 1 0-2 5.484 5.484 0 1 1 0 10.962z"/>
                             <path d="m46.5 35.889a1 1 0 0 1-1-1v-21.289a1 1 0 0 1 2 0v21.289a1 1 0 0 1-1 1z"/>
                         </svg> -->
-
                         <svg class="service__icon" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <image
@@ -489,7 +495,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Organic Peas</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -511,7 +517,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Brinjal</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -533,7 +539,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Garlic</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -555,7 +561,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Pepper</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -577,7 +583,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Organic Brown Onions</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -599,7 +605,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Fresh Lady Finger</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -621,7 +627,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Cauliflower</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
                 <li class="featureItem">
@@ -643,7 +649,7 @@
                     <div class="itemContent">
                         <p class="itemTitle">Ginger</p>
                         <h3 class="itemPrice">$11/kg</h3>
-                        <button class="AddToCart btn btn--primary">Add to cart</button>
+                        <button class="AddToCart btn">Add to cart</button>
                     </div>
                 </li>
             </ul>

@@ -90,3 +90,37 @@ $('.review__slider').slick({
 //   ]
 // });
 
+// -----===== Home page end here =====-----
+
+
+
+// -----===== Product page start here =====-----
+// === Slider for Product Section Start here ===
+$('.product__slider').slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true
+      }
+    }
+  ]
+});
+// === Slider for Product Section Close here ===
+// -----===== Product page start here =====-----

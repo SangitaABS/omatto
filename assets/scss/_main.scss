@@ -15,7 +15,7 @@
 }
 .collectionSubcontent{
     align-items: center;
-    padding: 25px 15px;
+    padding: 30px 10px;
     transition: all 2s linear;
 }
 .collectionSubcontent:hover{
@@ -101,7 +101,7 @@
 /* ---===Services Section Start here ===--- */
 .sevices__inner{
     grid-template-columns: 1fr 1.02fr 1fr 0.8fr;
-    grid-column-gap: 40px;
+    grid-gap: 40px;
     // padding: 12px 0;
 }
 .icon__container{
@@ -136,7 +136,7 @@
 /* ---===Providers Section Terminated here ===--- */
 .provider__content{
     grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 44px;
+    grid-gap: 44px;
 }
 .logo__container{
     background-color: #fff;
@@ -192,4 +192,3 @@
 
 
 /* ---===//Review Section Terminated here ===--- */
-/*Filter styles*/
